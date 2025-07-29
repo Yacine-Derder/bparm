@@ -1,2 +1,0 @@
-geometry_msgs/Pose target_pose
-float64[] start_joint_positions
