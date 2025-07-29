@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="bparm_5_1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.000147714993380038 3.86437548627327E-11 0.0344335444558568"
+        rpy="0 0 0" />
+      <mass
+        value="0.09275682784384" />
+      <inertia
+        ixx="0.000171517453339657"
+        ixy="6.62437339287057E-10"
+        ixz="1.19244230968858E-07"
+        iyy="3.61830561224154E-05"
+        iyz="1.12679947694376E-13"
+        izz="0.000179050068336717" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-3.59678982431166E-09 0.0224429410549994 2.86723159617641E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.242703771625424" />
+      <inertia
+        ixx="0.000119094117238749"
+        ixy="1.44019979650354E-10"
+        ixz="-2.20407452275585E-07"
+        iyy="0.000279261953138059"
+        iyz="-1.69484268016459E-07"
+        izz="0.000242859744668342" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.0615"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.3562"
+      upper="2.3562"
+      effort="1.0"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="-0.0068246 -7.6624E-10 3.2994E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.014515" />
+      <inertia
+        ixx="1.872E-06"
+        ixy="-4.0965E-14"
+        ixz="-1.1811E-14"
+        iyy="1.2911E-06"
+        iyz="-3.4624E-13"
+        izz="1.2324E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 0.04 0"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.9"
+      upper="1.9"
+      effort="1.0"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-2.1208E-05 0.10046 -0.00040832"
+        rpy="0 0 0" />
+      <mass
+        value="0.19136" />
+      <inertia
+        ixx="0.00062075"
+        ixy="4.7347E-07"
+        ixz="2.3393E-08"
+        iyy="3.894E-05"
+        iyz="-1.6297E-06"
+        izz="0.00063603" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="-0.02254 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.3562"
+      upper="2.3562"
+      effort="1.0"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="5.41694852800034E-05 0.0711418303247444 -0.0139420842338543"
+        rpy="0 0 0" />
+      <mass
+        value="0.165671647003906" />
+      <inertia
+        ixx="0.00016886824957459"
+        ixy="-2.69468977938436E-08"
+        ixz="4.05097399036029E-08"
+        iyy="4.69717098154336E-05"
+        iyz="-1.03327825778222E-06"
+        izz="0.000175146941058619" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.2 -0.0190000000000045"
+      rpy="0 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.3562"
+      upper="2.3562"
+      effort="1.0"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="6.80793620921882E-07 0.0404646030443322 0.000591187634898266"
+        rpy="0 0 0" />
+      <mass
+        value="0.164695579944042" />
+      <inertia
+        ixx="0.000192367151187575"
+        ixy="-2.69244029869932E-07"
+        ixz="1.70687310964394E-08"
+        iyy="4.09586796976325E-05"
+        iyz="1.24434581079355E-06"
+        izz="0.000199970106498001" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0 0.188000000000001 -0.0139999999999979"
+      rpy="0 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.3562"
+      upper="2.3562"
+      effort="1.0"
+      velocity="1.0" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="0.0452630242190938 0.0209701312193503 0.000258511668080996"
+        rpy="0 0 0" />
+      <mass
+        value="1.24192164964168" />
+      <inertia
+        ixx="0.000359417782615194"
+        ixy="-3.42640022195274E-06"
+        ixz="1.66181247115086E-06"
+        iyy="0.000274833056142284"
+        iyz="9.24894410806582E-08"
+        izz="0.000246221837791233" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bparm_5_1_description/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 0.122 0.0465"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.3562"
+      upper="2.3562"
+      effort="1.0"
+      velocity="1.0" />
+  </joint>
+</robot>
